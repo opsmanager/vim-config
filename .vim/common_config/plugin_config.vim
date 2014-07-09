@@ -9,7 +9,6 @@
   Bundle "git://github.com/tpope/vim-cucumber.git"
   Bundle "git://github.com/tpope/vim-endwise.git"
   Bundle "git://github.com/tpope/vim-fugitive.git"
-  Bundle "git://github.com/tpope/vim-haml.git"
   Bundle "git://github.com/pangloss/vim-javascript.git"
   Bundle "git://github.com/vim-scripts/L9.git"
   Bundle "git://github.com/tpope/vim-rake.git"
@@ -25,24 +24,19 @@
   Bundle "git://github.com/wgibbs/vim-irblack.git"
   Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git://github.com/skammer/vim-css-color.git"
+  Bundle "YankRing.vim"
+    let g:yankring_replace_n_pkey = "<C-'>"
 
   " CtrlP - with FuzzyFinder compatible keymaps
   Bundle "git://github.com/kien/ctrlp.vim.git"
-    nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
-    nnoremap <Leader>t :<C-U>CtrlP<CR>
-    nnoremap <Leader>T :<C-U>CtrlPTag<CR>
-    let g:ctrlp_prompt_mappings = {
-        \ 'PrtSelectMove("j")':   ['<down>'],
-        \ 'PrtSelectMove("k")':   ['<up>'],
-        \ 'AcceptSelection("h")': ['<c-j>'],
-        \ 'AcceptSelection("v")': ['<c-k>', '<RightMouse>'],
-        \ }
     " respect the .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
   Bundle "git://github.com/smerrill/vim-arduino.git"
     au BufNewFile,BufRead *.pde set filetype=arduino
     au BufNewFile,BufRead *.ino set filetype=arduino
+
+  Bundle "git://github.com/tpope/vim-haml.git"
 
 " Mustache
   Bundle "git://github.com/juvenn/mustache.vim.git"
