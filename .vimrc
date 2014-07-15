@@ -7,7 +7,7 @@ runtime! common_config/*.vim
 runtime! custom_config/*.vim
 map <F1> <Esc>
 
-Bundle 'Yggdroot/indentLine'
-Bundle 'EasyGrep'
-Bundle 'roman/golden-ratio'
-Bundle 'rking/ag.vim'
+" Bundle 'Yggdroot/indentLine'
+" Bundle 'EasyGrep'
+" Bundle 'roman/golden-ratio'
+" Bundle 'rking/ag.vim'
