@@ -33,8 +33,8 @@
   set lines=45 columns=120
 
 " pretty but not terminal-compatible color scheme
-  set background=dark
-  colors twilight2
+"  set background=dark
+"  colors twilight2
 
 colorscheme railscasts
 

@@ -23,8 +23,12 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
-  Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git://github.com/skammer/vim-css-color.git"
+  Bundle "Yggdroot/indentLine"
+  Bundle "EasyGrep"
+  Bundle "roman/golden-ratio"
+  Bundle "rking/ag.vim"
+  Bundle "git@github.com:vim-scripts/abolish.vim.git"
   Bundle "YankRing.vim"
     let g:yankring_replace_n_pkey = "<C-'>"
 
