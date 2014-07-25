@@ -1,6 +1,7 @@
-# Neo Vim Config
+# OpsManager Vim Config
 
-You should give it a try.
+Cloned from Neo, You should give theirs a try.
+
 
 ## Pre-requisites
 
@@ -85,8 +86,15 @@ Common practice is to symlink a folder containing your custom configuration file
 
 #### Macros (from within insert mode type abbreviation followed by punctuation or space)
 
-* `Lidsa` - insert some lorem ipsum text
-* `rdebug` - insert ruby specfic debugger statement
+* `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum` - insert some lorem ipsum text
+* `require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger; 0;` - insert ruby specfic debugger statement
+
+## Abolish
+
+MixedCase (crm)
+camelCase (crc)
+snake_case (crs)
+UPPER_CASE (cru)
 
 ## CtrlP
 
@@ -248,19 +256,19 @@ again.
 For instance, consider starting with the following lines:
 
 
-    Some short phrase,some other phrase
-    A much longer phrase here,and another long phrase
+Some short phrase,some other phrase
+A much longer phrase here,and another long phrase
 
 
 Let's say we want to line these lines up at the commas.  We can tell
 Tabularize to do this by passing a pattern matching , to the Tabularize
 command:
 
-    :Tabularize /,
+:Tabularize /,
 
 
-    Some short phrase         , some other phrase
-    A much longer phrase here , and another long phrase
+Some short phrase         , some other phrase
+A much longer phrase here , and another long phrase
 
 
 **Customizations**
@@ -360,7 +368,7 @@ HTML, and opens it in your default browser.
 ## Other goodies
 
 * `:OpenHtml` - view the current file (or selected lines) in a browser
-  (for copying & pasting with syntax highlighting)
+(for copying & pasting with syntax highlighting)
 * `:Tidy` - tidy an HTML/XML file inline
 * `:AlignColons` - align all colon-separated content (CSS rules) in a file
 
@@ -392,5 +400,4 @@ popular color themes](http://www.vi-improved.org/color_sampler_pack/):
 * xoria256
 
 Use `:color vibrantink` to switch to a color scheme.
-
 
