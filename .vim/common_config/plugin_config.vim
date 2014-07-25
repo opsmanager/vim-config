@@ -23,7 +23,6 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
-  Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git@github.com:tpope/vim-abolish.git"
   Bundle "git@github.com:christoomey/vim-tmux-navigator.git"
 
@@ -37,7 +36,7 @@
   Bundle "Yggdroot/indentLine"
   Bundle "EasyGrep"
   Bundle "roman/golden-ratio"
-  Bundle "rking/ag.vim"
+  Bundle 'mileszs/ack.vim'
   Bundle "git@github.com:vim-scripts/abolish.vim.git"
   Bundle "YankRing.vim"
     let g:yankring_replace_n_pkey = "<C-'>"
@@ -220,7 +219,6 @@
   Bundle "git://github.com/tpope/vim-fireplace.git"
   Bundle "git://github.com/tpope/vim-classpath.git"
   Bundle "git://github.com/guns/vim-clojure-static.git"
-  Bundle "git://github.com/vim-scripts/paredit.vim"
   Bundle "git@github.com:amdt/vim-niji.git"
   autocmd BufNewFile,BufRead *.clj set filetype=clojure
   autocmd BufNewFile,BufRead *.edn set filetype=clojure
