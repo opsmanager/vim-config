@@ -88,6 +88,13 @@ Common practice is to symlink a folder containing your custom configuration file
 * `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum` - insert some lorem ipsum text
 * `require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger; 0;` - insert ruby specfic debugger statement
 
+## Abolish
+
+MixedCase (crm)
+camelCase (crc)
+snake_case (crs)
+UPPER_CASE (cru)
+
 ## CtrlP
 
 Provides convenient ways to quickly reach the

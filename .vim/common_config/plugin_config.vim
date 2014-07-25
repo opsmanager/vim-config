@@ -27,6 +27,9 @@
   Bundle "EasyGrep"
   Bundle "roman/golden-ratio"
   Bundle "rking/ag.vim"
+  Bundle "git@github.com:vim-scripts/abolish.vim.git"
+
+
   Bundle "YankRing.vim"
     let g:yankring_replace_n_pkey = "<C-'>"
 
