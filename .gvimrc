@@ -36,4 +36,6 @@
   set background=dark
   colors twilight2
 
+colorscheme railscasts
+
 runtime! custom_config/*.gvim
