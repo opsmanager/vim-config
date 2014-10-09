@@ -26,8 +26,12 @@
   Bundle "git@github.com:tpope/vim-abolish.git"
   Bundle "git@github.com:christoomey/vim-tmux-navigator.git"
   Bundle "git@github.com:wizztjh/vim-open-jasmine-rice.git"
-  Bundle "git@github.com:thoughtbot/vim-rspec.git"
   Bundle "airblade/vim-gitgutter"
+  Bundle "MarcWeber/vim-addon-mw-utils"
+  Bundle "tomtom/tlib_vim"
+  Bundle "git@github.com:garbas/vim-snipmate.git"
+  Bundle "thoughtbot/vim-rspec"
+    let g:rspec_runner = "os_x_iterm"
 
 " Dash Searching"
   Bundle "git@github.com:rizzatti/funcoo.vim.git"
