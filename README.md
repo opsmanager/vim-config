@@ -25,6 +25,7 @@ Windows users: be sure to use **RailsInstaller** > **Command Prompt with Ruby an
 4. `vim` (or in Windows: `gvim`)
 5. `:BundleClean` (if you have previously used this Neo Vim config)
 6. `:BundleInstall` (This will clone and install all of the plugins from github.)
+7. `brew install ack ag` (This will install ack and ag for the Ag and Ack vim plugin to work)
 
 ## Customizing
 
