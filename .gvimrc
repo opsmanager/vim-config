@@ -34,3 +34,7 @@
 "  colors twilight2
 
 runtime! custom_config/*.gvim
+
+if filereadable(glob("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
