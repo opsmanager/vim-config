@@ -7,6 +7,10 @@ Cloned from Neo, You should give theirs a try.
 
 This config is built primarily to work on top of the OSX version of `MacVim`, but should be usable on top of other `vim` or `gvim` installations that are built with all of the `vim` features necessary to support the used plugins.
 
+## Font Requirement
+This vim configuration requires the Meslo font from
+[https://github.com/Lokaltog/powerline-fonts](https://github.com/Lokaltog/powerline-fonts)
+
 ## Attention Windows Users!
 
 If you are installing this config on Microsoft Windows, you must download and install the latest [RailsInstaller](http://www.railsinstaller.org/) package.  Go ahead and do it now.  I'll wait.
@@ -19,22 +23,24 @@ The Windows version of the Vim configuration uses rake (for installation) git (f
 
 Windows users: be sure to use **RailsInstaller** > **Command Prompt with Ruby and Rails** to perform these installation steps instead of the normal command prompt.
 
-1. `git clone git://github.com/neo/vim-config.git`
+1. `git clone git@github.com:neo/vim-config.git`
 2. `cd vim-config`
 3. `rake` (This will symlink the necessary files to your home directory, asking for permission before clobbering anything.)
 4. `vim` (or in Windows: `gvim`)
-5. `:BundleClean` (if you have previously used this Neo Vim config)
-6. `:BundleInstall` (This will clone and install all of the plugins from github.)
+5. `:NeoBundleClean` (if you have previously used this Neo Vim config)
+6. `:NeoBundleInstall` (This will clone and install all of the plugins from github.)
 7. `brew install ack ag` (This will install ack and ag for the Ag and Ack vim plugin to work)
 
 ## Customizing
 
-Customizations can be added to the folder `.vim/custom_config/`.
+Customizations can be added to the folder `.vim/custom_preconfig/` or `.vim/custom_config/`
 
 * Any files with a `.vim` extension in that folder will be loaded when running all versions of `vim`.
 * Any files with a `.gvim` extension in that folder will be loaded when running a graphical version of `vim`.
 
-You can add custom plugins by registering them in a `.vim` file in the custom_config folder with the same `Bundle "plugin-repo-url"`
+The custom_preconfig settings are loaded prior to the common config. A common usecase for this is to reset mapleader.  Most of the rest of the customizations are placed in custom_config.
+
+You can add custom plugins by registering them in a `.vim` file in the custom_config folder with the same `NeoBundle "plugin-repo-url"`
 syntax used in the `.vim/common_config/plugin_config.vim`, and then performing steps 3 & 4 from the install steps above.
 
 Common practice is to symlink a folder containing your custom configuration files as the `.vim/custom_config` folder.
@@ -229,18 +235,7 @@ functionality to your vim projects.  You can learn more about it with
 `:help NERDTree`.
 
 **Customizations**:
-Use `gt` to toggle NERDTree
-
-## Ack.vim
-
-Ack.vim uses ack to search inside the current directory for a pattern.
-You can learn more about it with :help Ack
-
-**Customizations**:
-
-* `g/` to bring up `:Ack `.
-* `g*` to bring up an `:Ack -w` search with the word under cursor.
-
+Use `<leader>g` to toggle NERDTree
 
 ## Tabular
 
@@ -402,3 +397,24 @@ popular color themes](http://www.vi-improved.org/color_sampler_pack/):
 
 Use `:color vibrantink` to switch to a color scheme.
 
+## Searching with VIM
+
+We have a shortcut to search the entire current working directory for a given query.
+
+`g/` will result in `:Ack! ` and you type in your query
+`g*` will result in `:Ack! <word>` depending on the location of your cursor.
+
+For example, if I place my cursor on the word "foo" then type `g*` it will return `:Ack! -w foo`
+
+This search functionality might not work until you install Ack or Ag. You can install these easily with brew.
+
+## Powerline Fonts
+
+If you would like to use powerline fonts for vim and you use iTerm, make sure to set your Non ASCII Font in the iTerm settings.
+
+## Contributing
+
+If you are going to contribute to our config, please make sure you are not overriding any common defaults.
+Also remember that we have a custom_config directory if you want to make a change for just yourself.
+
+All PRs **must** be reviewed by at least one other person before being merged.
