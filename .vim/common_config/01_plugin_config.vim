@@ -56,6 +56,7 @@
 " CtrlP
   NeoBundle "git://github.com/kien/ctrlp.vim.git"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
+    nnoremap <C-p> :<C-U>CtrlP<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
 
