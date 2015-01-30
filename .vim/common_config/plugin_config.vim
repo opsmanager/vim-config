@@ -29,6 +29,7 @@
   Bundle "airblade/vim-gitgutter"
   Bundle "MarcWeber/vim-addon-mw-utils"
   Bundle "tomtom/tlib_vim"
+  Bundle 'gertjanreynaert/cobalt2-vim-theme'
   Bundle "git@github.com:garbas/vim-snipmate.git"
   Bundle "thoughtbot/vim-rspec"
     let g:rspec_runner = "os_x_iterm"
