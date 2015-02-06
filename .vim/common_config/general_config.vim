@@ -4,11 +4,6 @@
 " enable syntax highlighting
   syntax on
 
-" default color scheme
-  set background=dark
-  color Tomorrow-Night-Eighties
-  set guifont=Monaco:h17
-
 " don't wrap long lines
   set nowrap
 
