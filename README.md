@@ -115,6 +115,11 @@ fuzzy/partial pattern to which it converted an entered pattern.
 * `<C-j>` - open selected item in window in horizontal split
 * `<C-k>` - open selected item in vertical split
 
+#SplitJoin
+
+* `gS` - to split a one-liner into multiple lines
+* `gJ` - (with the cursor on the first line of a block) to join a block into a single-line statement.
+
 ## Unimpaired
 
 Utility functions for working with lines, files, and elements.

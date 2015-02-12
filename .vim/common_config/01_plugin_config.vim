@@ -20,6 +20,7 @@
   NeoBundle "git://github.com/vim-scripts/matchit.zip"
   NeoBundle "git://github.com/vim-scripts/ruby-matchit.git"
   NeoBundle "git://github.com/tpope/vim-abolish.git"
+  NeoBundle "git://github.com/AndrewRadev/splitjoin.vim"
 
  " Vim airline configs
   NeoBundle 'git://github.com/bling/vim-airline.git'
