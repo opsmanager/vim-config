@@ -1,3 +1,4 @@
+set encoding=utf-8
 set rtp+=~/.vim/bundle/neobundle.vim/
 
 runtime! custom_preconfig/*.vim
