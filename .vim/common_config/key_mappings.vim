@@ -62,3 +62,6 @@ map <Leader>ra :call RunAllSpecs()<CR>
 " insert the path of currently edited file into a command
 " Command mode: Ctrl-P
   cmap <C-S-P> <C-R>=expand("%:p:h") . "/" <cr>
+
+" go to middle of line
+  map gm :call cursor(0, len(getline('.'))/2)<CR>
