@@ -65,3 +65,6 @@ map <Leader>ra :call RunAllSpecs()<CR>
 
 " go to middle of line
   map gm :call cursor(0, len(getline('.'))/2)<CR>
+
+" NERDTree Find
+  nmap <leader>nf :NERDTreeFind<cr>
