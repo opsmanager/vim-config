@@ -5,6 +5,12 @@
  " Let NeoBundle manage NeoBundle
  NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Open jasmine rice from Vim
+  NeoBundle "git://github.com/dominicwong617/vim-open-jasmine-rice.git"
+
+" SplitJoin
+  NeoBundle "git://github.com/AndrewRadev/splitjoin.vim.git"
+
 " Plugins requiring no additional configuration or keymaps
   NeoBundle "git://github.com/michaeljsmith/vim-indent-object.git"
   NeoBundle "git://github.com/oscarh/vimerl.git"
@@ -20,8 +26,7 @@
   NeoBundle "git://github.com/vim-scripts/matchit.zip"
   NeoBundle "git://github.com/vim-scripts/ruby-matchit.git"
   NeoBundle "git://github.com/tpope/vim-abolish.git"
-  NeoBundle "git://github.com/AndrewRadev/splitjoin.vim"
-  NeoBundle "git://github.com/wizztjh/vim-open-jasmine-rice.vim"
+  NeoBundle "git://github.com/skammer/vim-css-color"
 
  " Vim airline configs
   NeoBundle 'git://github.com/bling/vim-airline.git'
@@ -138,7 +143,6 @@
     nmap <leader>g :NERDTreeToggle<CR>
     nmap <leader>G :NERDTreeFind<CR>
 
-
 " Tabular for aligning text
   NeoBundle "git://github.com/godlygeek/tabular.git"
     function! CustomTabularPatterns()
@@ -161,7 +165,6 @@
 " ZoomWin to fullscreen a particular buffer without losing others
   NeoBundle "git://github.com/vim-scripts/ZoomWin.git"
     map <Leader>z :ZoomWin<CR>
-
 
 " Unimpaired for keymaps for quicky manipulating lines and files
   NeoBundle "git://github.com/tpope/vim-unimpaired.git"
