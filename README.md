@@ -241,6 +241,7 @@ functionality to your vim projects.  You can learn more about it with
 
 **Customizations**:
 Use `<leader>g` to toggle NERDTree
+Use `<leader>nf` to toggle NERDTreeFind
 
 ## Tabular
 
@@ -416,6 +417,17 @@ This search functionality might not work until you install Ack or Ag. You can in
 ## Powerline Fonts
 
 If you would like to use powerline fonts for vim and you use iTerm, make sure to set your Non ASCII Font in the iTerm settings.
+
+## JS2Coffee
+
+Assuming that you have installed js2coffe in your machine, you can use the function PasteAsCoffee to convert your pbcopy contents
+contents and paste them into the opened buffer as coffescript (assuming it is valid js)
+
+There is a shortcut available for the function:
+
+```code
+<leader>pc
+```
 
 ## Contributing
 

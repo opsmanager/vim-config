@@ -64,7 +64,10 @@ map <Leader>ra :call RunAllSpecs()<CR>
   cmap <C-S-P> <C-R>=expand("%:p:h") . "/" <cr>
 
 " go to middle of line
-  map gm :call cursor(0, len(getline('.'))/2)<CR>
+  map gm :call cursor(0, len(getline('.'))/2)<cr>
 
 " NERDTree Find
   nmap <leader>nf :NERDTreeFind<cr>
+
+" Shortcut for PasteAsCoffee function
+  map <leader>pc :PasteAsCoffee<cr>
