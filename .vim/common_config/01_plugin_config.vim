@@ -30,6 +30,7 @@
 
  " Vim airline configs
   NeoBundle 'git://github.com/bling/vim-airline.git'
+  let g:airline_enabled = 1
   let g:airline_powerline_fonts = 1
   let g:airline_mode_map = {
       \ '__' : '-',
@@ -62,6 +63,7 @@
   let g:airline_symbols.paste = 'Þ'
   let g:airline_symbols.paste = '∥'
   let g:airline_symbols.whitespace = 'Ξ'
+  let g:airline_symbols.space = "\ua0"
 
 " Easy motion config
   NeoBundle "git://github.com/Lokaltog/vim-easymotion.git"
@@ -142,6 +144,7 @@
     let NERDTreeHijackNetrw = 0
     nmap <leader>g :NERDTreeToggle<CR>
     nmap <leader>G :NERDTreeFind<CR>
+    let g:NERDTreeDirArrows=1
 
 " Tabular for aligning text
   NeoBundle "git://github.com/godlygeek/tabular.git"
