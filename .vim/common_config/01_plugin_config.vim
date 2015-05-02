@@ -267,4 +267,9 @@
   NeoBundle 'gertjanreynaert/cobalt2-vim-theme'
   NeoBundle "git@github.com:garbas/vim-snipmate.git"
 
+" Easy formatting of JavaScript or JSON files
+  NeoBundle "maksimr/vim-jsbeautify"
+  NeoBundle "einars/js-beautify"
+  nmap <Leader>fj :call JsBeautify()<cr>
+
  call neobundle#end()
