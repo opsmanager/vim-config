@@ -134,6 +134,9 @@
       nmap gp :cprev<CR>
       nmap gq :ccl<CR>
       nmap gl :cwindow<CR>
+      
+  " Vim Multiple Cursors
+   NeoBundle 'git://github.com/terryma/vim-multiple-cursors.git'
 
 
   " Tagbar for navigation by tags using CTags
