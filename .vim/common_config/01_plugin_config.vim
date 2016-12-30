@@ -1,8 +1,8 @@
   " Plugins are managed by call dein#add.
-  call dein#begin(expand('~/.vim/bundle/'))
+  call dein#begin(expand("~/.vim/bundle/"))
 
   " Let call dein#add manage dein.vim
-  call dein#add('Shougo/dein.vim')
+  call dein#add("Shougo/dein.vim")
 
   " Plugins requiring no additional configuration or keymaps
   call dein#add("michaeljsmith/vim-indent-object")
@@ -92,7 +92,7 @@
       nmap g* :Ack! <C-R><C-W><space>
 
   " Vim Multiple Cursors
-    call dein#add ('terryma/vim-multiple-cursors')
+    call dein#add ("terryma/vim-multiple-cursors")
 
   " NERDTree for project drawer
     call dein#add("scrooloose/nerdtree")
