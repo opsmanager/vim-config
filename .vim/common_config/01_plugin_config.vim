@@ -98,7 +98,7 @@
     call dein#add("scrooloose/nerdtree")
       nmap <leader>g :NERDTreeToggle<CR>
       nmap <leader>G :NERDTreeFind<CR>
-      let g:NERDTreeDirArrows=1
+      let g:NERDTreeDirArrows=0
 
   " Tabular for aligning text
     call dein#add("godlygeek/tabular")
@@ -174,7 +174,6 @@
 
   " Opsmanager hand picked plugins
     call dein#add("roman/golden-ratio")
-    call dein#add('mileszs/ack.vim')
     call dein#add("Yggdroot/indentLine")
     call dein#add("nathanaelkane/vim-indent-guides")
     call dein#add("airblade/vim-gitgutter")
