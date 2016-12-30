@@ -82,12 +82,12 @@
     call dein#add("kchmck/vim-coffee-script")
       au BufNewFile,BufRead *.coffee set filetype=coffee
 
-    call dein#add('mileszs/ack.vim')
-      let g:ackprg = 'ag --vimgrep --smart-case'
-      cnoreabbrev ag Ack!
-      cnoreabbrev aG Ack!
-      cnoreabbrev Ag Ack!
-      cnoreabbrev AG Ack!
+    call dein#add("mileszs/ack.vim")
+      let g:ackprg = 'rg --vimgrep --no-heading'
+      cnoreabbrev rg Ack!
+      cnoreabbrev rG Ack!
+      cnoreabbrev Rg Ack!
+      cnoreabbrev RG Ack!
 
       nmap g* :Ack! <C-R><C-W><space>
 
@@ -96,7 +96,6 @@
 
   " NERDTree for project drawer
     call dein#add("scrooloose/nerdtree")
-      let NERDTreeHijackNetrw = 0
       nmap <leader>g :NERDTreeToggle<CR>
       nmap <leader>G :NERDTreeFind<CR>
       let g:NERDTreeDirArrows=1
