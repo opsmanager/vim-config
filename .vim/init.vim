@@ -1,1 +1,0 @@
-/Users/ranhiru/.vimrc
