@@ -177,7 +177,7 @@
     call dein#add("Yggdroot/indentLine")
     call dein#add("nathanaelkane/vim-indent-guides")
     call dein#add("airblade/vim-gitgutter")
-    call dein#add("BufOnly.vim")
+    call dein#add("vim-scripts/BufOnly.vim")
 
   " Easy formatting of JavaScript or JSON files
     call dein#add("maksimr/vim-jsbeautify")
