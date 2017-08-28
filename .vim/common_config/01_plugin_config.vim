@@ -12,22 +12,17 @@
   call dein#add("tpope/vim-fugitive")
   call dein#add("tpope/vim-haml")
   call dein#add("tpope/vim-repeat")
-  call dein#add("tpope/vim-abolish")
   call dein#add("skammer/vim-css-color")
   call dein#add("AndrewRadev/splitjoin.vim")
   call dein#add("wizztjh/vim-open-jasmine-rice")
-  call dein#add("rpbaltazar/vim-lodash-highlight")
 
   call dein#add('Shougo/neocomplete')
-  call dein#add('Shougo/neosnippet')
-  call dein#add('Shougo/neosnippet-snippets')
 
   call dein#add('junegunn/vim-easy-align')
 
   " Vim airline configs
-    call dein#add('bling/vim-airline')
+    call dein#add('vim-airline/vim-airline')
     let g:airline_enabled = 1
-    let g:airline_powerline_fonts = 1
     let g:airline_mode_map = {
         \ '__' : '-',
         \ 'n'  : 'N',
@@ -131,14 +126,8 @@
       vmap <C-k> [egv
       vmap <C-j> ]egv
 
-  " Syntastic for catching syntax errors on save
-    call dein#add("scrooloose/syntastic")
-      let g:syntastic_enable_signs=1
-      let g:syntastic_quiet_messages = {'level': 'warning'}
-      " syntastic is too slow for haml and sass
-      let g:syntastic_mode_map = { 'mode': 'active',
-                                 \ 'active_filetypes': [],
-                                 \ 'passive_filetypes': ['haml','scss','sass'] }
+  " Ale for catching syntax errors on save
+    call dein#add("w0rp/ale")
 
   " rails.vim, nuff' said
     call dein#add("tpope/vim-rails")
@@ -151,8 +140,8 @@
       map <Leader>oi :Rintegration<Space>
 
       let g:rails_projections = {
-        \ "app/assets/javascripts/*.js.coffee": { "alternate": "spec/javascripts/%s_spec.js.coffee" },
-        \ "spec/javascripts/*_spec.js.coffee": { "alternate": "app/assets/javascripts/%s.js.coffee" } }
+        \ "app/assets/javascripts/*.js.coffee": { "alternate": "spec/javascripts/{}_spec.js.coffee" },
+        \ "spec/javascripts/*_spec.js.coffee": { "alternate": "app/assets/javascripts/{}.js.coffee" } }
 
   " surround for adding surround 'physics'
     call dein#add("tpope/vim-surround")
