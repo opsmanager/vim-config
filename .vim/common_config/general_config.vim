@@ -59,16 +59,6 @@
 " show status line
   set laststatus=2
 
-" augment status line
-  function! ETry(function, ...)
-    if exists('*'.a:function)
-      return call(a:function, a:000)
-    else
-      return ''
-    endif
-  endfunction
-  set statusline=[%n]\ %<%.99f\ %h%w%m%r%{ETry('CapsLockStatusline')}%y%{ETry('rails#statusline')}%{ETry('fugitive#statusline')}%#ErrorMsg#%*%=%-16(\ %l,%c-%v\ %)%P
-
 " When lines are cropped at the screen bottom, show as much as possible
   set display=lastline
 
@@ -86,9 +76,6 @@
   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
   set list
 
-" have the mouse enabled all the time
-  set mouse=a
-
 " use tab-complete to see a list of possiblities when entering commands
   set wildmode=list:longest,full
 
@@ -98,44 +85,11 @@
 " remember last position in file
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
-" Thorfile, Rakefile, Vagrantfile, and Gemfile are Ruby
-  au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
-
 " JSON is JS
   au BufNewFile,BufRead *.json set ai filetype=javascript
 
-" keep track of the status bar highlight mode (optimization)
-let g:bar_mode = 0
-
-" change status line color depending on the state of the buffer
-function! ColorizeStatusLine(...)
-  if a:0 && a:1 == "i" && g:bar_mode != -1
-    let g:bar_mode = -1
-    highlight StatusLine cterm=NONE ctermbg=cyan ctermfg=white gui=NONE guibg=white guifg=black
-  else
-    if &l:modified == g:bar_mode
-      return
-    else
-      if &l:modified
-        highlight StatusLine cterm=NONE ctermbg=red ctermfg=white gui=NONE guibg=red  guifg=white
-      else
-        highlight StatusLine cterm=NONE ctermbg=black ctermfg=gray gui=NONE guibg=black  guifg=gray
-      endif
-
-      let g:bar_mode = &l:modified
-    endif
-  endif
-endfunction
-
-augroup hi_statusline
-  autocmd!
-  autocmd InsertEnter * call ColorizeStatusLine("i")
-  autocmd InsertLeave,CursorMoved,BufReadPost,BufWritePost * call ColorizeStatusLine()
-augroup END
-
 " hamlc files are haml filetype
-autocmd BufNewFile,BufRead *.hamlc set filetype=haml
+  autocmd BufNewFile,BufRead *.hamlc set filetype=haml
 
-autocmd FileType sass,scss,stylus syn cluster sassCssAttributes add=@cssColors
-
-au BufWritePre *.* call TrimEndLines()
+" trim whitelines at end of file
+  au BufWritePre *.* call TrimEndLines()
